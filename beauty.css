@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&family=Sedan+SC&display=swap');
+
+body{
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.Main-nav{
+    width: 100%;
+    position: fixed;
+    top:0;
+    background-color: rgba(255, 255, 255, 0.571);
+    z-index: 100;
+    .navbar{
+        height: 150px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.537);
+        display: flex;
+        margin: 0;
+            .menu1{
+                img{
+                    height: 120px;
+                    width: 185px;
+                    margin-left: 20px;
+                }
+                p{
+                    font-size: 1.3rem;
+                    margin-top: -25px;
+                    margin-left: 30px;
+                    font-family: "Dancing Script", cursive;
+                    color: rgb(53, 4, 23);
+                    line-height: 15px;
+                }   
+
+            }
+            .menu2{
+                a{
+                    text-decoration: none;
+                    padding: 15px;
+                    font-family: "Sedan SC", serif;
+                    color:  blueviolet;
+                    font-size: 1.5rem;
+                    margin-top: -200px;
+    
+                }
+                a:hover{
+                    color: rgb(69, 14, 69);
+                }
+                a:nth-child(8){
+                    opacity: 0;
+                    animation: blink .9s infinite ease-in-out;
+                }
+
+            }
+    }
+}
+    .Home{
+        height: 115vh;
+        width: 100%;
+    }
+    .coursewegive {
+        height: 150vh;
+        width: 100%;
+        background-color: peachpuff;
+    
+        h6 {
+            font-family: "Dancing Script", cursive;
+            font-size: 4rem;
+            margin-left: 35%;
+            color: rgb(79, 15, 79);
+            position: relative;
+            top: 150px;
+            animation: change 1s infinite linear;
+        }
+    
+        .courses {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            position: relative;
+            top: 200px;
+        }
+    
+        .course-wrapper {
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        
+    
+            img {
+                height: 350px;
+                width: 350px;
+                border-radius: 30px;
+
+            }
+            .description{
+    
+            a{
+                color: black;
+                font-family: "Dancing Script", cursive;
+                font-size: 2rem;
+                font-weight: 300;
+                text-align: center;
+                height: 100px;
+                width: 100px;
+                background-color: pink;
+                position: relative;
+                top: -30px;
+                text-decoration: none;
+            }
+        }
+    }
+    
+        .course-wrapper:hover {
+            img {
+                transform: scale(1.2);
+                transition: all 0.2s linear;
+            }
+        }
+    }
+             
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+        color: red;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes change {
+    0%{
+        
+    }25%{
+        color:rgb(136, 41, 76) ;
+    }
+
+    50%{
+        color:rgb(158, 33, 79) ;
+    }
+    75%{
+        color: rgb(231, 0, 154);
+    }
+    100%{
+        color: rgb(231, 0, 154);
+    }
+}
+
+.about {
+    height: 270vh;
+    width: 100%;
+    padding-top: 120px;
+    background-color: bisque;
+
+    h6 {
+        font-family: "Dancing Script", cursive;
+        font-size: 4rem;
+        margin-left: 40%;
+        color: purple;
+        position: relative;
+        top: 40px;
+        animation: change 1s infinite linear;
+    }
+
+    p {
+        font-family: "Dancing Script", cursive;
+        font-size: 2rem;
+        margin-left: 32%;
+        position: relative;
+        top: 40px;
+        color: rgb(225, 38, 144);
+    }
+
+    .para {
+        width: 95%;
+
+        p {
+            font-family: "Sedan SC", serif;
+            text-align: center;
+            font-size: 2rem;
+            margin-left: 90px;
+            margin-top: 50px;
+            color: black;
+        }
+    }
+
+    .why {
+        h6 {
+            font-family: "Dancing Script", cursive;
+            font-size: 4rem;
+           position: relative;
+           top: 180px;
+            margin-left: 400px;
+            color: purple;
+        }
+        .whyyy {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            position: relative;
+            top: 200px;
+        }
+    
+        .why-wrapper {
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+           
+            img {
+                height: 280px;
+                width: 280px;
+                position: relative;
+                top: 10px;
+
+            }
+
+        .descrip{
+    
+            p{
+                color: black;
+                font-family: "Dancing Script", cursive;
+                font-size: 2rem;
+                font-weight: 300;
+                text-align: center;
+                height: 100px;
+                width: 400px;
+                position: relative;
+                top: 10px;
+                left: -120px;
+                
+            }
+        }
+    }
+    
+        .why-wrapper:hover {
+            img {
+                transform: scale(1.2);
+            }
+        }
+    }
+       
+}
+
+.Recruitment{
+    height: 100vh;
+    width: 100%;
+    padding-top: 120px;
+    background-color: rgb(251, 184, 103);
+
+    h6 {
+        font-family: "Dancing Script", cursive;
+        font-size: 4rem;
+        margin-left: 40%;
+        color: purple;
+        position: relative;
+        top: 40px;
+        animation: change 1s infinite linear;
+    }
+    .Recruit{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+    img{
+        position: relative;
+        top: 90px;
+        height: 300px;
+        width: 300px;
+       
+    }
+    img:hover{
+        transform: scale(1.2);
+        box-shadow: 10px 10px 20px gray;
+    }
+}
+
+.Gallary{
+    height: 200vh;
+    width: 100%;
+    background-color: peachpuff;
+
+    h6 {
+        font-family: "Dancing Script", cursive;
+        font-size: 4rem;
+        margin-left: 40%;
+        color: rgb(79, 15, 79);
+        position: relative;
+        top: 150px;
+        animation: change 1s infinite linear;
+    }
+
+    .images{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        top: 200px;
+    }
+
+    .image-wrapper {
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    
+
+        img {
+            height: 350px;
+            width: 350px;
+            padding: 30px;
+
+        }
+    }
+    .image-wrapper:hover {
+        img {
+            transform: scale(1.2);
+            transition: all 0.2s linear;
+        }
+    }
+}
+
+.contentdetails {
+    height: 50vh;
+    width: 100%;
+    padding-top: 60px;
+    display: flex;
+
+    .cont1 {
+       img{
+        height: 100px;
+        width: 100px;
+        position: relative;
+        top: 100px;
+        left: 700px;
+       }
+       
+
+        h6 {
+            font-family: "Dancing Script", cursive;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-top: 90px;
+            color: #ad5389;
+            position: absolute;
+            left: 650px;
+        }
+    }
+
+
+    .phone {
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    .e-mail {
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    .location {
+        height: 500px;
+        width: 350px;
+        text-align: center;
+        padding: 30px;
+
+        h6 {
+            font-family: "Dancing Script", cursive;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-top: 210px;
+            color: #ad5389;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-left: 15%;
+            color: black;
+            text-align: center;
+            margin-left: 1px;
+        }
+    }
+
+    .pri {
+        height: 500px;
+        width: 400px;
+        text-align: center;
+        position: relative;
+        left: 550px;
+        top:260px;
+
+        h6 {
+            font-family: "Dancing Script", cursive;
+            font-size: 1.5rem;
+            text-align: center;
+            color: #ad5389;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-left: 15%;
+            color: black;
+            text-align: center;
+            margin-left: 1px;
+        }
+    }
+}
+
+    
